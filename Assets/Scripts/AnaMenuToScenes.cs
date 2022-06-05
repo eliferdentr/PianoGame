@@ -15,26 +15,7 @@ public class AnaMenuToScenes : MonoBehaviour
         SceneManager.LoadScene("AraMenu");
     }
 
-    public void AnaMen()
-    {
-        SceneManager.LoadScene("AnaMenu");
-    }
-
-    public void Seviye1()
-    {
-        SceneManager.LoadScene("EgitimEkrani 1");
-    }
-
-    public void Seviye2()
-    {
-        SceneManager.LoadScene("EgitimEkrani 2");
-    }
-
-    public void Seviye3()
-    {
-        SceneManager.LoadScene("EgitimEkrani 3");
-    }
-
+  
     public void Cikis() {
         Application.Quit();
     }

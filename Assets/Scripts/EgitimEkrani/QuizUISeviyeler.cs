@@ -12,6 +12,7 @@ public class QuizUISeviyeler : MonoBehaviour
     [SerializeField] public Image questionImage; //bunu serializefield yaparak buna inspector'dan referans yapabiliriz
     [SerializeField] public List<Button> options;     //bunlar butonlarýn, yani tuþlarýn hepsi oluyor
     [SerializeField] public Color correctCol, wrongCol, normalCol;
+    [SerializeField] private List<Image> lifeImageList;
 
     public Question question; //seçilen soru burada tutulacak
     public bool answered; //bu sorunun cevaplanýp cevaplanmadýðýna bakýlacak. böylece birden fazla seçeneðe týklanmayacak (?) adam öyle dedi idk
@@ -79,6 +80,11 @@ public class QuizUISeviyeler : MonoBehaviour
 
             }
         }
+    }
+
+    public void ReduceLife(int remainingLife)
+    {
+        lifeImageList[remainingLife].color = Color.red;
     }
 
 }

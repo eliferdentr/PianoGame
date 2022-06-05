@@ -48,6 +48,8 @@ public class QuizManager : MonoBehaviour
 public class Question {  //Bu bir soru oluþturmaya yarýyor. 
     public Button correctAnswer;  //Sorunun doðru cevabý bir piyano tuþu olacak ???????????????????????????
     public Sprite questionImg; //sorunun notasýný gösteren bir resim olacak
+    public int dondurmesayisi ;
+    public int yanlishakkisayisi ;
 }
 
 
